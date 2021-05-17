@@ -8,10 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "cirrus",
@@ -21,8 +18,7 @@
   ],
   "author": "Stanley Lim",
   "license": "MIT",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "browserslist": [
     "last 1 major version",
     ">= 1%",
