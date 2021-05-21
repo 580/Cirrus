@@ -8,7 +8,7 @@
 
     .tree-item {
 
-        > {
+        > input {
             display: none;
         }
 
@@ -17,11 +17,11 @@
             display: block;
             padding: 0.25rem 0.5rem;
             cursor: pointer;
-            font-weight: 700; /* Keep styling consistent with menu-items */
+            // font-weight: 700; /* Keep styling consistent with menu-items */
         }
         
         /* The dropdown glyph of the tree menu */
-        .tree-item-header .icon {
+        .tree-item-header .#{$class-prefix}icon {
             -webkit-transition: all var(--animation-duration);
             transition: all var(--animation-duration);
         }
@@ -33,7 +33,7 @@
         }
         
         /* Rotate the dropdown glyph */
-        input:checked ~ .tree-item-header .icon {
+        input:checked ~ .tree-item-header .#{$class-prefix}icon {
             -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
         }
