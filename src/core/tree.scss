@@ -42,6 +42,7 @@
         .tree-item-body {
             max-height: 0; /* Hidden at first */
             margin-left: 1.5rem;
+            padding-top: 0.25em;
             overflow: hidden;
             -webkit-transition: all var(--animation-duration);
             transition: all var(--animation-duration);
