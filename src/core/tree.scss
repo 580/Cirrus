@@ -1,7 +1,9 @@
+@import "./theme.scss";
+@import "../../helpers/_size";
 
 /* TREE */
 /* Tree Navigation Menu */
-.tree {
+.#{$class-prefix}tree {
     margin: 0;
 
     .tree-item {
