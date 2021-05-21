@@ -31,7 +31,7 @@
         pointer-events: auto; /* Re-enable pointer events */
 
         /* The div in the modal dialpog used to create the translucent background */
-        .modal-overlay {
+        .#{$class-prefix}modal-overlay {
             position: absolute; /* Absolute inside of the modal container */
             top: 0;
             left: 0;
@@ -41,8 +41,8 @@
             background-color: transparentize($color: $cirrus-dark, $amount: 0.5);
         }
 
-        // .modal-container,
-        .modal-container {
+        // .#{$class-prefix}modal-container,
+        .#{$class-prefix}modal-container {
             -webkit-animation: slide-down var(--animation-duration) ease 1;
             animation: slide-down var(--animation-duration) ease 1;
             z-index: 1;
@@ -50,16 +50,16 @@
     }
 
     /* Different size modals */
-    &.modal-small .modal-content {
+    &.#{$class-prefix}modal-small .#{$class-prefix}modal-content {
         max-width: 20rem; /* 320px */
     }
 
-    &.modal-large .modal-content {
+    &.#{$class-prefix}modal-large .#{$class-prefix}modal-content {
         max-width: 60rem; /* 960px */
     }
 
     /* The modal dialog body with the text itself */
-    .modal-content {
+    .#{$class-prefix}modal-content {
         background-color: var(--cirrus-bg);
         padding: 0;
         display: block;
@@ -83,23 +83,23 @@
         //     color: var(--cirrus-fg);
         // }
 
-        .modal-header {
+        .#{$class-prefix}modal-header {
             padding: 1rem 2rem;
         }
 
-        .modal-header .modal-title {
+        .#{$class-prefix}modal-header .#{$class-prefix}modal-title {
             font-weight: bolder;
             font-size: 1.4rem;
         }
 
-        .modal-body {
+        .#{$class-prefix}modal-body {
             padding: 0 2rem;
             overflow-y: auto;
             max-height: 50vh; /* Max height is 50% of viewport height which prevents dialog from extetnding past screen */
             position: relative;
         }
 
-        .modal-footer {
+        .#{$class-prefix}modal-footer {
             padding: 1rem 2rem;
         }
 
@@ -108,43 +108,6 @@
         }
     }
 
-    /* MODAL ANIMATIONS */
-    // &.modal-animated--dropdown {
-    //     -webkit-animation: slide-down var(--animation-duration) ease 1;
-    //     animation: slide-down var(--animation-duration) ease 1;
-    // }
-
-    /* Visible state */
-    // &.modal-animated--zoom-in,
-    // &.modal-animated--zoom-out {
-    //     display: -webkit-box; /* Force dialog to appear in the center */
-    //     display: -ms-flexbox;
-    //     display: flex;
-    //     opacity: 0;
-    //     transition: 300ms all ease;
-    // }
-
-    // &#{$shown-class-name}.modal-animated--zoom-in,
-    // &#{$shown-class-name}.modal-animated--zoom-out {
-    //     opacity: 1;
-    //     transition: 300ms all ease;
-    // }
-
-    // &.modal-animated--zoom-in .modal-content {
-    //     transform: scale(0.8);
-    //     transition: 300ms all ease;
-    // }
-
-    // &#{$shown-class-name}.modal-animated--zoom-in .modal-content,
-    // &#{$shown-class-name}.modal-animated--zoom-out .modal-content {
-    //     transform: scale(1);
-    //     transition: 300ms all ease;
-    // }
-
-    // &.modal-animated--zoom-out .modal-content {
-    //     transform: scale(1.2);
-    //     transition: 300ms all ease;
-    // }
 }
 
 /* Keyframes for slide down animation */
@@ -174,7 +137,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .modal-content {
+    .#{$class-prefix}modal-content {
         max-width: 90%;
     }
 }
