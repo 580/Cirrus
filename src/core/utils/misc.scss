@@ -128,3 +128,25 @@
 .u-shadow {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.07);
 }
+
+.u-icon {
+    /* Usually used in spans */
+    display: inline-block;
+    /* font-size: 21px; Allow font sizes for icons to be overwritten */
+    /* line-height: 1.5rem; Allow line height to be inherited or overwritten */
+    text-align: center;
+    width: 1.5rem;
+    vertical-align: baseline;
+
+    &.x-small {
+        margin: 0.55rem 0 0 0.1rem;
+    }
+
+    &.small {
+        margin: 0.95rem 0 0 0.1rem;
+    }
+
+    .fa-wrapper {
+        font-size: inherit;
+    }
+}
