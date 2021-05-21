@@ -1,3 +1,5 @@
+@import '../core/theme.scss';
+
 /* EXTENDED LINKS */
 /* Animated links */
 .u,
@@ -16,7 +18,7 @@
         position: absolute;
         height: 0.1rem;
         width: 0;
-        background: var(--cirrus-link-dark);
+        background: $cirrus-primary;
         bottom: -0.25em;
     }
 
@@ -53,138 +55,138 @@
 }
 
 /* Underline top and bottom */
-.utb {
+// .utb {
 
-    &::before,
-    &::after {
-        content: "";
-        transition: all 0.3s;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        position: absolute;
-        height: 0.1rem;
-        width: 0;
-        background: var(--cirrus-link-dark);
-    }
+//     &::before,
+//     &::after {
+//         content: "";
+//         transition: all 0.3s;
+//         -webkit-backface-visibility: hidden;
+//         backface-visibility: hidden;
+//         position: absolute;
+//         height: 0.1rem;
+//         width: 0;
+//         background: $cirrus-primary;
+//     }
     
-    &::before {
-        top: -0.25em;
-    }
+//     &::before {
+//         top: -0.25em;
+//     }
     
-    &::after {
-        bottom: -0.25em;
-    }
+//     &::after {
+//         bottom: -0.25em;
+//     }
 
-    &:hover::before,
-    &:hover::after {
-        width: 100%;
-    }
+//     &:hover::before,
+//     &:hover::after {
+//         width: 100%;
+//     }
 
-    &.utb-LR::before,
-    &.utb-LR::after {
-        left: 0;
-    }
+//     &.utb-LR::before,
+//     &.utb-LR::after {
+//         left: 0;
+//     }
     
-    &.utb-RL::before,
-    &.utb-RL::after {
-        right: 0;
-    }
+//     &.utb-RL::before,
+//     &.utb-RL::after {
+//         right: 0;
+//     }
     
-    &.utb-C::before,
-    &.utb-C::after {
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-    }
+//     &.utb-C::before,
+//     &.utb-C::after {
+//         left: 50%;
+//         -webkit-transform: translateX(-50%);
+//         transform: translateX(-50%);
+//     }
 
-    /* Opposite start */
-    &.utb-OLR::before {
-        /* Suffix denotes border transition direction for the top border (left to right). Bottom border will be the opposite direction */
-        left: 0;
-    }
+//     /* Opposite start */
+//     &.utb-OLR::before {
+//         /* Suffix denotes border transition direction for the top border (left to right). Bottom border will be the opposite direction */
+//         left: 0;
+//     }
     
-    &.utb-OLR::after {
-        right: 0;
-    }
+//     &.utb-OLR::after {
+//         right: 0;
+//     }
     
-    &.utb-ORL::before {
-        right: 0;
-    }
+//     &.utb-ORL::before {
+//         right: 0;
+//     }
     
-    &.utb-ORL::after {
-        left: 0;
-    }
-}
+//     &.utb-ORL::after {
+//         left: 0;
+//     }
+// }
 
 /* Links with square borders */
 
 /* Please note that usquare is the parent span (not div) which would create the left and right borders. The link (.utb-OLR) gets nested within this */
 
-.usquare {
-    margin-left: 0.4rem;
-    position: relative;
-    overflow: hidden;
+// .usquare {
+//     margin-left: 0.4rem;
+//     position: relative;
+//     overflow: hidden;
 
-    &::before,
-    &::after {
-        content: "";
-        transition: 0.25s all ease;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        position: absolute;
-        width: 2px;
-        width: 0.1 rem;
-        height: 0;
-        background: var(--cirrus-link-dark);
-    }
+//     &::before,
+//     &::after {
+//         content: "";
+//         transition: 0.25s all ease;
+//         -webkit-backface-visibility: hidden;
+//         backface-visibility: hidden;
+//         position: absolute;
+//         width: 2px;
+//         width: 0.1 rem;
+//         height: 0;
+//         background: $cirrus-primary;
+//     }
 
-    &::before {
-        left: 0;
-        bottom: -0.2rem;
-    }
+//     &::before {
+//         left: 0;
+//         bottom: -0.2rem;
+//     }
 
-    &::after {
-        right: 0;
-        top: -0.2rem;
-    }
+//     &::after {
+//         right: 0;
+//         top: -0.2rem;
+//     }
 
-    &:hover {
-        &::before,
-        &::after {
-            height: calc(100% + 0.4rem); /* Makes the left and right borders */
-        }
+//     &:hover {
+//         &::before,
+//         &::after {
+//             height: calc(100% + 0.4rem); /* Makes the left and right borders */
+//         }
 
-        a::before,
-        a::after {
-            width: 100%;
-        }
-    }
+//         a::before,
+//         a::after {
+//             width: 100%;
+//         }
+//     }
 
-    &.delay {
-        &::before {
-            transition-delay: 0.6s;
-        }
+//     &.delay {
+//         &::before {
+//             transition-delay: 0.6s;
+//         }
 
-        &::after {
-            transition-delay: var(--animation-duration);
-        }
+//         &::after {
+//             transition-delay: $animation-duration;
+//         }
 
-        a::after {
-            transition: 0.25s all ease 0.4s;
-        }
-    }
+//         a::after {
+//             transition: 0.25s all ease 0.4s;
+//         }
+//     }
 
-    a {
-        position: static;
-        padding: 0.2rem 0.4rem;
-        transition: 0.25s all ease;
+//     a {
+//         position: static;
+//         padding: 0.2rem 0.4rem;
+//         transition: 0.25s all ease;
 
-        &::before {
-            left: 0;
-        }
+//         &::before {
+//             left: 0;
+//         }
         
-        &::after {
-            right: 0;
-        }
-    }
-}
+//         &::after {
+//             right: 0;
+//         }
+//     }
+// }

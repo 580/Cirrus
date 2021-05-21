@@ -1,5 +1,7 @@
+@import '../core/theme.scss';
+
 /* TILES */
-.tile {
+.#{$class-prefix}tile {
     display: flex;
     display: -ms-flexbox;
     align-content: space-between; /* Ensure space between child elements of card tile */

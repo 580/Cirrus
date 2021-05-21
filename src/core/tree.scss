@@ -34,8 +34,8 @@
         
         /* Rotate the dropdown glyph */
         input:checked ~ .tree-item-header .#{$class-prefix}icon {
-            -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
         }
         
         /* Container for the menu-items of the tree menu */
