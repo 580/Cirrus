@@ -18,12 +18,18 @@
             padding: 0.25rem 0.5rem;
             cursor: pointer;
             // font-weight: 700; /* Keep styling consistent with menu-items */
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+             -khtml-user-select: none; /* Konqueror HTML */
+               -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                    user-select: none;
         }
         
         /* The dropdown glyph of the tree menu */
         .tree-item-header .#{$class-prefix}icon {
-            -webkit-transition: all var(--animation-duration);
-            transition: all var(--animation-duration);
+            -webkit-transition: all $animation-duration;
+            transition: all $animation-duration;
         }
         
         /* Expand the tree-item-body (has menu-items) */
@@ -44,8 +50,8 @@
             margin-left: 1.5rem;
             padding-top: 0.25em;
             overflow: hidden;
-            -webkit-transition: all var(--animation-duration);
-            transition: all var(--animation-duration);
+            -webkit-transition: all $animation-duration;
+            transition: all $animation-duration;
         }
     }
 }
@@ -115,10 +121,10 @@
 //         top: 0;
 //         -webkit-transform: translateX(-100%);
 //         transform: translateX(-100%);
-//         transition: transform var(--animation-duration) ease, -webkit-transform var(--animation-duration) ease;
-//         -webkit-transition: -webkit-transform var(--animation-duration) ease;
-//         transition: transform var(--animation-duration) ease;
-//         transition: -webkit-transform var(--animation-duration) ease;
+//         transition: transform $animation-duration ease, -webkit-transform $animation-duration ease;
+//         -webkit-transition: -webkit-transform $animation-duration ease;
+//         transition: transform $animation-duration ease;
+//         transition: -webkit-transform $animation-duration ease;
 //         z-index: 400;
 
 //         /* Open the menu from the side */
@@ -126,10 +132,10 @@
 //         &:target {
 //             -webkit-transform: translateX(0);
 //             transform: translateX(0);
-//             transition: transform var(--animation-duration) ease, -webkit-transform var(--animation-duration) ease;
-//             -webkit-transition: -webkit-transform var(--animation-duration) ease;
-//             transition: -webkit-transform var(--animation-duration) ease;
-//             transition: transform var(--animation-duration) ease;
+//             transition: transform $animation-duration ease, -webkit-transform $animation-duration ease;
+//             -webkit-transition: -webkit-transform $animation-duration ease;
+//             transition: -webkit-transform $animation-duration ease;
+//             transition: transform $animation-duration ease;
 
 //             /* Show the darkened area when the tree nav menu is clicked */
 //             & + .tree-nav-close {

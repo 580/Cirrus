@@ -6,6 +6,7 @@
 .utb {
     display: inline;
     position: relative; /* So the psuedo-elements are positioned correctly */
+    overflow: hidden;
 }
 
 /* Underline */

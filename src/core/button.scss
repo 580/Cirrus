@@ -9,24 +9,24 @@
 /* Un-themed */
 
 #{$input-selectors} {
-    line-height: 2rem;
+    line-height: 2em;
     overflow: hidden;
-    padding: 0.5rem 1rem;
+    padding: 0.5em 1em;
     border: 1px solid transparent;
-    border-radius: 0.25rem;
+    border-radius: 0.25em;
     cursor: pointer;
     text-align: center;
     transition: all var(--animation-duration);
     background-color: var(--btn-color);
     border-color: var(--btn-border-color);
     color: var(--btn-fg);
-    font-size: 0.75rem;
-    letter-spacing: 0.03rem;
+    font-size: 0.75em;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     font-family: Montserrat;
-    min-width: 2rem;
+    min-width: 2em;
     user-select: none;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     outline: none;
     --btn-color: #{map-get($grays, '000')};
     --btn-fg: #{map-get($grays, '700')};
@@ -139,7 +139,7 @@
         --btn-border-color: transparent;
 
         &:focus {
-            box-shadow: 0 0 0 0.2rem rgba(246, 249, 252, 0.5);
+            box-shadow: 0 0 0 0.2em rgba(246, 249, 252, 0.5);
         }
         &:hover {
             --btn-color: rgba(0, 0, 0, 0.1);
@@ -158,7 +158,7 @@
             --btn-color: var(--cirrus-light-hover);
         }
         &:focus {
-            box-shadow: 0 0 0 0.2rem transparentize($cirrus-light, 0.5);
+            box-shadow: 0 0 0 0.2em transparentize($cirrus-light, 0.5);
         }
     }
 
@@ -168,7 +168,7 @@
         --btn-border-color: var(--cirrus-dark);
 
         &:focus {
-            box-shadow: 0 0 0 0.2rem transparentize($cirrus-dark, 0.5);
+            box-shadow: 0 0 0 0.2em transparentize($cirrus-dark, 0.5);
         }
         &:hover {
             --btn-color: var(--cirrus-dark-hover);
@@ -184,7 +184,7 @@
         --btn-border-color: #000;
 
         &:focus {
-            box-shadow: 0 0 0 0.2rem transparentize($cirrus-dark, 0.5);
+            box-shadow: 0 0 0 0.2em transparentize($cirrus-dark, 0.5);
         }
         &:hover {
             --btn-color: #000;
@@ -197,7 +197,7 @@
         --btn-border-color: var(--cirrus-accent-border);
 
         &:focus {
-            box-shadow: 0 0 0 0.2rem transparentize($cirrus-primary, 0.5);
+            box-shadow: 0 0 0 0.2em transparentize($cirrus-primary, 0.5);
         }
         &:hover {
             --btn-color: var(--cirrus-accent-hover);
@@ -213,7 +213,7 @@
         --btn-border-color: var(--cirrus-info);
 
         &:focus {
-            box-shadow: 0 0 0 0.2rem transparentize($cirrus-info, 0.5);
+            box-shadow: 0 0 0 0.2em transparentize($cirrus-info, 0.5);
         }
         &:hover {
             --btn-color: var(--cirrus-info-hover);
@@ -229,7 +229,7 @@
         --btn-border-color: var(--cirrus-link);
 
         &:focus {
-            box-shadow: 0 0 0 0.2rem transparentize($cirrus-link, 0.5);
+            box-shadow: 0 0 0 0.2em transparentize($cirrus-link, 0.5);
         }
         &:hover {
             --btn-color: var(--cirrus-link-dark);
@@ -251,7 +251,7 @@
         --btn-border-color: var(--cirrus-success);
 
         &:focus {
-            box-shadow: 0 0 0 0.2rem transparentize($cirrus-success, 0.5);
+            box-shadow: 0 0 0 0.2em transparentize($cirrus-success, 0.5);
         }
         &:hover {
             --btn-color: var(--cirrus-success-hover);
@@ -267,7 +267,7 @@
         --btn-border-color: var(--cirrus-warning);
 
         &:focus {
-            box-shadow: 0 0 0 0.2rem transparentize($cirrus-warning, 0.5);
+            box-shadow: 0 0 0 0.2em transparentize($cirrus-warning, 0.5);
         }
         &:hover {
             --btn-color: var(--cirrus-warning-hover);
@@ -283,7 +283,7 @@
         --btn-border-color: var(--cirrus-danger);
 
         &:focus {
-            box-shadow: 0 0 0 0.2rem transparentize($cirrus-danger, 0.5);
+            box-shadow: 0 0 0 0.2em transparentize($cirrus-danger, 0.5);
         }
         &:hover {
             --btn-color: var(--cirrus-danger-hover);
@@ -295,24 +295,24 @@
 
     /* Extra small button */
     &.btn-xsmall {
-        padding: 0 0.5rem;
+        padding: 0 0.5em;
         font-size: 50%;
     }
 
     /* Small button */
     &.btn-small {
-        padding: 0.25rem 1rem;
+        padding: 0.25em 1em;
         font-size: 70%;
     }
 
     /* Big button */
     &.btn-large {
-        padding: 0.75rem 2rem;
+        padding: 0.75em 2em;
         font-size: 90%;
     }
 
     &.btn-xlarge {
-        padding: 1rem 2.5rem;
+        padding: 1em 2.5em;
         font-size: 110%;
     }
 
@@ -331,28 +331,28 @@
         // vertical-align: baseline;
 
         &.pad-right {
-            margin-right: 0.4rem;
+            margin-right: 0.4em;
         }
 
         &.pad-left {
-            margin-left: 0.4rem;
+            margin-left: 0.4em;
         }
     }
 
     /* Alternatives to pad-left and pad-right */
     span:first-child {
-        margin-right: 0.2rem;
+        margin-right: 0.2em;
     }
 
     span:last-child {
-        margin-left: 0.2rem;
+        margin-left: 0.2em;
     }
 }
 
 /* Deprecated 0.5.6, use m-1 instead */
 // /* Adds small margin around buttons */
 // .btn-container {
-//     margin: 0.5rem;
+//     margin: 0.5em;
 //     overflow: visible;
 // }
 
@@ -390,12 +390,12 @@
 // /* Right of input */
 // .has-controls.input:not([class*='left action']) > button:last-child,
 // .has-controls.input:not([class*='left action']) > .btn:last-child {
-//     border-radius: 0 0.28571429rem 0.28571429rem 0;
+//     border-radius: 0 0.28571429em 0.28571429em 0;
 // }
 
 // .has-controls.input:not([class*='right action']) > button:last-child,
 // .has-controls.input:not([class*='right action']) > .btn:last-child {
-//     border-radius: 0.28571429rem 0 0 0.28571429rem;
+//     border-radius: 0.28571429em 0 0 0.28571429em;
 // }
 
 /* Make the loader white so it is visible */
@@ -440,8 +440,8 @@
 
             &:not(:first-child):not(:last-child) {
                 /* Style button in middle of group */
-                border-radius: 0; /* Remove roundness from center buttons */
-                margin-left: -0.1rem;
+                border-radius: 0; /* emove roundness from center buttons */
+                margin-left: -0.1em;
             }
         }
     }
@@ -474,7 +474,7 @@
                 margin-bottom: -1px;
 
                 &:first-child:not(:last-child) {
-                    border-radius: 0.25rem 0.25rem 0 0;
+                    border-radius: 0.25em 0.25em 0 0;
                 }
 
                 &:not(:first-child):not(:last-child) {
@@ -482,7 +482,7 @@
                 }
 
                 &:last-child:not(:first-child) {
-                    border-radius: 0 0 0.25rem 0.25rem;
+                    border-radius: 0 0 0.25em 0.25em;
                     margin-left: 0;
                 }
             }
