@@ -3739,7 +3739,6 @@ a.tag:hover {
   .btn span:last-child, button span:last-child, [type="submit"] span:last-child, [type="reset"] span:last-child, [type="button"] span:last-child {
     margin-left: 0.2rem; }
 
-/* Deprecated 0.5.6, use m-1 instead */
 [class^='btn-']:not(.btn-container):not(.btn-close),
 [class*=' btn-']:not(.btn-container):not(.btn-close) {
   background-color: var(--btn-color);
@@ -3774,8 +3773,6 @@ a.tag:hover {
 /* BUTTON GROUPS */
 /* Will group buttons with components in a single component */
 .btn-group {
-  /* -ms-flex-wrap: wrap; Deprecated 0.5.6, allow for overflow
-    flex-wrap: wrap; Wrap contents to next row on overflow */
   display: -webkit-inline-box;
   display: inline-flex;
   display: -ms-inline-flexbox;
@@ -4150,7 +4147,6 @@ mark,
   font-size: 5.5rem;
   letter-spacing: 0.05rem; }
 
-/* Deprecated, use font-bold */
 .font-alt {
   font-family: 'Nunito Sans'; }
 
@@ -4957,7 +4953,6 @@ label:last-child:not(:first-child):not(.form-group-label) {
   width: 3rem;
   z-index: 1; }
 
-/* Form section just adds extra spacing between form elements tiled vertically */
 /* Form groups that group inputs with other controls. */
 .form-group {
   /* This is just an extended portion of an input which is just like a label and is read only */
@@ -5443,10 +5438,7 @@ label:last-child:not(:first-child):not(.form-group-label) {
     /* Align items to the left */
     /* Align items to the right */
     /* Centering items, best used when nav-brand is not used to prevent offset */
-    /* Hide hamburger button */
-    /* .nav-item {
-        position: relative; /* Include for helping dropdown menu positioning  Deprecated 0.5.6
-      } */ }
+    /* Hide hamburger button */ }
     .header .header-nav {
       -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -5724,11 +5716,6 @@ section {
   bottom: 0;
   left: 0;
   height: 100vh; }
-
-/* Deprecated 0.5.6
-// .panel {
-//     padding: 2.5em 0;
-// }
 
 /* This works well with spans and maybe even hr */
 .divider {
@@ -6069,54 +6056,6 @@ section {
   max-width: 100%;
   padding: 0.5rem; }
 
-/* Use in parent div of fluid col Deprecated in 0.5.6, use .row
-.fluid-container {
-    display: flex;
-    overflow: auto;
-}
-
-/* Wrap controls instead on overflow 
-.fluid-container.wrap {
-    -webkit-align-items: center;
-    align-items: center;
-    display: flex;
-    display: -ms-flexbox;
-    -ms-flex-align: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-/* Resizes elements in a row equally given the number of elements located in it 
-.fluid-container .col-fluid {
-    display: block;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-}
-
-/* No expansion for specific col-fluid columns 
-.fluid-container .col-fluid.no-flex {
-    flex-grow: 0;
-    flex-shrink: 0;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    -ms-flex-negative: 0;
-} */
-/* Divider for multiple elements in a div */
-/* .divided > .fluid-container:not(.row),
-.divided > .row [class^="col-"], .divided > .row [class*=" col-"] { DEPRECATED 0.5.5
-    box-shadow: -1px 0 0 0 rgba(34, 36, 38, 0.15);
-} */
-/* Remove border in first child */
-/* .divided > .row [class^="col-"]:first-child,
-.divided > .row [class*=" col-"]:first-child {
-    box-shadow: none; DEPRECATED 0.5.5
-} */
 .level {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -7699,6 +7638,70 @@ video.video-fullscreen {
 .u-flex-column-reverse {
   flex-direction: column-reverse !important; }
 
+@media screen and (min-width: 640px) {
+  .u-flex-row-sm {
+    flex-direction: row !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-flex-row-reverse-sm {
+    flex-direction: row-reverse !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-flex-column-sm {
+    flex-direction: column !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-flex-column-reverse-sm {
+    flex-direction: column-reverse !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-flex-row-md {
+    flex-direction: row !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-flex-row-reverse-md {
+    flex-direction: row-reverse !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-flex-column-md {
+    flex-direction: column !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-flex-column-reverse-md {
+    flex-direction: column-reverse !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-flex-row-lg {
+    flex-direction: row !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-flex-row-reverse-lg {
+    flex-direction: row-reverse !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-flex-column-lg {
+    flex-direction: column !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-flex-column-reverse-lg {
+    flex-direction: column-reverse !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-flex-row-xl {
+    flex-direction: row !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-flex-row-reverse-xl {
+    flex-direction: row-reverse !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-flex-column-xl {
+    flex-direction: column !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-flex-column-reverse-xl {
+    flex-direction: column-reverse !important; } }
+
 .u-justify-flex-start {
   justify-content: flex-start !important; }
 
@@ -7717,6 +7720,102 @@ video.video-fullscreen {
 .u-justify-space-evenly {
   justify-content: space-evenly !important; }
 
+@media screen and (min-width: 640px) {
+  .u-justify-flex-start-sm {
+    justify-content: flex-start !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-justify-center-sm {
+    justify-content: center !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-justify-flex-end-sm {
+    justify-content: flex-end !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-justify-space-between-sm {
+    justify-content: space-between !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-justify-space-around-sm {
+    justify-content: space-around !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-justify-space-evenly-sm {
+    justify-content: space-evenly !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-justify-flex-start-md {
+    justify-content: flex-start !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-justify-center-md {
+    justify-content: center !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-justify-flex-end-md {
+    justify-content: flex-end !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-justify-space-between-md {
+    justify-content: space-between !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-justify-space-around-md {
+    justify-content: space-around !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-justify-space-evenly-md {
+    justify-content: space-evenly !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-justify-flex-start-lg {
+    justify-content: flex-start !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-justify-center-lg {
+    justify-content: center !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-justify-flex-end-lg {
+    justify-content: flex-end !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-justify-space-between-lg {
+    justify-content: space-between !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-justify-space-around-lg {
+    justify-content: space-around !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-justify-space-evenly-lg {
+    justify-content: space-evenly !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-justify-flex-start-xl {
+    justify-content: flex-start !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-justify-center-xl {
+    justify-content: center !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-justify-flex-end-xl {
+    justify-content: flex-end !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-justify-space-between-xl {
+    justify-content: space-between !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-justify-space-around-xl {
+    justify-content: space-around !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-justify-space-evenly-xl {
+    justify-content: space-evenly !important; } }
+
 .u-items-stretch {
   align-items: stretch !important; }
 
@@ -7732,6 +7831,86 @@ video.video-fullscreen {
 .u-items-baseline {
   align-items: baseline !important; }
 
+@media screen and (min-width: 640px) {
+  .u-items-stretch-sm {
+    align-items: stretch !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-items-flex-start-sm {
+    align-items: flex-start !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-items-center-sm {
+    align-items: center !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-items-flex-end-sm {
+    align-items: flex-end !important; } }
+
+@media screen and (min-width: 640px) {
+  .u-items-baseline-sm {
+    align-items: baseline !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-items-stretch-md {
+    align-items: stretch !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-items-flex-start-md {
+    align-items: flex-start !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-items-center-md {
+    align-items: center !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-items-flex-end-md {
+    align-items: flex-end !important; } }
+
+@media screen and (min-width: 768px) {
+  .u-items-baseline-md {
+    align-items: baseline !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-items-stretch-lg {
+    align-items: stretch !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-items-flex-start-lg {
+    align-items: flex-start !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-items-center-lg {
+    align-items: center !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-items-flex-end-lg {
+    align-items: flex-end !important; } }
+
+@media screen and (min-width: 1024px) {
+  .u-items-baseline-lg {
+    align-items: baseline !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-items-stretch-xl {
+    align-items: stretch !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-items-flex-start-xl {
+    align-items: flex-start !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-items-center-xl {
+    align-items: center !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-items-flex-end-xl {
+    align-items: flex-end !important; } }
+
+@media screen and (min-width: 1280px) {
+  .u-items-baseline-xl {
+    align-items: baseline !important; } }
+
 /* UTILS */
 /* Utility classes to help solve some very annoying issues */
 .u-pull-left {
@@ -7739,9 +7918,6 @@ video.video-fullscreen {
 
 .u-pull-right {
   float: right !important; }
-
-.u-text-justify {
-  text-align: justify !important; }
 
 .u-text-ellipsis {
   text-overflow: ellipsis;
@@ -7752,6 +7928,9 @@ video.video-fullscreen {
   hyphens: auto;
   word-break: break-word;
   word-wrap: break-word; }
+
+.u-text-justify {
+  text-align: justify !important; }
 
 .u-text-center {
   text-align: center !important; }
@@ -7821,7 +8000,7 @@ video.video-fullscreen {
   outline: 0px !important; }
 
 .u-shadow {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.07); }
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.07) !important; }
 
 /* Spacing */
 /* Fonts */
