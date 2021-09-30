@@ -2,7 +2,7 @@
 
 /* TABLE */
 
-.table {
+.#{$class-prefix}table {
     margin-bottom: 1.5rem;
     width: 100%;
     border-collapse: collapse; /* Allows us to set 0 margin in table cells */

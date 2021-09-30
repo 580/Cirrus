@@ -1,7 +1,7 @@
 @import '../core/theme.scss';
 
 /* TAGS */
-.tag {
+.#{$class-prefix}tag {
     align-items: center;
     background-color: var(--cirrus-light);
     border-radius: 0.25rem;
@@ -141,7 +141,7 @@
 }
 
 /* TAG CONTAINER */
-.tag-container {
+.#{$class-prefix}tag-container {
     /* Add margin in between tag containers */
     &:not(:last-child) {
         margin-bottom: 1rem;
@@ -218,7 +218,8 @@
     }
 }
 
-/* MISC */
+/* MISC 
 a.tag:hover {
     text-decoration: underline;
 }
+*/
